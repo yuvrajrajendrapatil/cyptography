@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+body{
+    background-color: rgb(245, 207, 213);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menubuttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menubuttons button{
+    width: 120px;
+    height: 35px;
+    background-color: rgba(241, 91, 204, 0.904);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.home-btn{
+    width: 100px;
+    height: 28px;
+    margin: 5px;
+    background-color: rgba(241, 91, 204, 0.904);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.wrapper{
+    width: 290px;
+    height: 400px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.inputs input{
+    width: 205px;
+    height: 34px;
+    padding: 4px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid rgb(155, 122, 127);
+}
+.inputs button{
+    width: 60px;
+    height: 30px;
+    margin: 2px 8px;
+    border: none;
+    background-color: rgb(194, 224, 241);
+    border-radius: 6px;
+}
+.encrypt{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.decrypt{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shift{
+    outline: none;
+}
+.inputs label{
+    display: block;
+}
+
+
+.matrix{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2rem;
+    margin: 0 0 8px 0;
+}
+
+
+.matrix input{
+    width: 85px;
+}
+
+.loginwrapper{
+    height: 60vh;
+}
+
+.login-btn{
+    width: 100%;
+    text-align: center;
+}
+
+.login-btn button{
+    width: 80px;
+    height: 32px;
+    background-color: rgba(247, 45, 78, 0.925);
+    color: white;
+    font-size: 16px;
+}
+
+.login-btn button:hover{
+    background: transparent;
+    border: 2px solid  rgba(247, 45, 78, 0.925);
+    color:  rgba(247, 45, 78, 0.925);
+    cursor: pointer;
+}
